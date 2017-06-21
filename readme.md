@@ -5,7 +5,7 @@ My Solar Panels är en enkel webapp i React som är scaffoldad med Yeoman. Gener
 För att komma igång behöver du bara starta Webpacks "dev-server".
 
 ## Mål med testet
-Lös så många uppgifter du kan/hinner. Vi vill se små-fokuserade commits som beskriver förändringen du gjort. När du är klar kan du lämna in resultatet som en pull request.
+Lös så många uppgifter du kan/hinner. Vi vill se små, fokuserade commits som beskriver förändringen du gjort. När du är klar kan du lämna in resultatet som en pull request.
 
 ## Uppgift 1
 Solpanelen med id 2 strular ibland och behöver ses över. Därför vill husägaren flytta den till nedre raden, så att den blir mer lättillgänglig. Byt plats på panel 1 och panel 8.
