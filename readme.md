@@ -17,7 +17,7 @@ Vår designer har bestämt att vi ska kunna erbjuda två olika takfärger, istä
 Solpanelerna är hårdkodade till en kapacitet på 250W, men nu ska vi även stödja olika typer av paneler, så kapaciteten måste vara konfigurerbar. Det är tillräckligt bra om kapaciteten definieras i samband med att id och takposition sätts.
 
 ## Uppgift 4
-Vi vill nu lägga till en knapp som stoppar/startar alla solpaneler. Det naturliga sättet att bygga den är som en ny react-komponent. Scaffolda den helst med hjälp av yeoman. Denna generator använder vi: . Knappen kan visuellt ligga var som helst på sidan.
+Vi vill nu lägga till en knapp som stoppar/startar alla solpaneler. Det naturliga sättet att bygga den är som en ny react-komponent. Scaffolda med hjälp av yeoman. Knappen kan visuellt ligga var som helst på sidan.
 
 ## Uppgift 5
 Under senaste releasen så blev rubriken "My solar panels" vänsterställd. Den ska egentligen ligga centrerad över himlen. Detta måste rättas till. En ledtråd finns i git-historiken.
