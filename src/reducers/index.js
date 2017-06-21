@@ -9,7 +9,8 @@
  */
 /* Populated by react-webpack-redux:reducer */
 import { combineReducers } from 'redux';
+import panelsAreOn from './panels-are-on';
 
-const reducers = {};
-const combined = combineReducers(reducers);
-module.exports = combined;
+export default combineReducers({
+	panelsAreOn
+})

@@ -1,0 +1,13 @@
+.solarpanel-component {
+	box-shadow: 1px 4px 3px rgba(black, .4), inset 0 -3px 1px -1px rgba(white, .2);
+	box-sizing: border-box;
+	background: linear-gradient(30deg, rgba(#CCCCFF, .2) 50%, rgba(#000066, .2) 100%);
+	padding: 10px;
+
+	> output {
+		font-weight: bold;
+		font-size: larger;
+		font-family: monospace;
+		color: palegreen;
+	}
+}
