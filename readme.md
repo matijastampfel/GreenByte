@@ -8,7 +8,7 @@ My Solar Panels is a simple webapp, built with React and scaffolded with Yeoman.
 1. Once finished, invite mikael@greenbyte.com to your private repository
 1. Send an email to mikael@greenbyte.com and let us know you are done
 
-## The goal
+## The test
 Solve as many tasks as you can. We want to see small, focused commits that describe your changes.
 
 ### Task 1
