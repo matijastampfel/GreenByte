@@ -1,26 +1,30 @@
 # My solar panels
 
-My Solar Panels är en enkel webapp i React som är scaffoldad med Yeoman. Generatorn som används är https://github.com/stylesuxx/generator-react-webpack-redux.
+My Solar Panels is a simple webapp, built with React and scaffolded with Yeoman. This is the generator being used https://github.com/stylesuxx/generator-react-webpack-redux (visit the page for more information on how to get started)
 
-För att komma igång behöver du bara starta Webpacks "dev-server".
+## Getting started with your solution
+1. Fork this repository (you might have to turn off Atlassian's "new nav" as it's buggy with Forking right now) to your own, new, **private** (important) repository
+1. Start working on your solution
+1. Once finished, invite mikael@greenbyte.com to your private repository
+1. Send an email to mikael@greenbyte.com and let us know you are done
 
-## Mål med testet
-Lös så många uppgifter du kan/hinner. Vi vill se små, fokuserade commits som beskriver förändringen du gjort. När du är klar kan du lämna in resultatet som en pull request.
+## The goal
+Solve as many tasks as you can. We want to see small, focused commits that describe your changes.
 
-## Uppgift 1
-Solpanelen med id 2 strular ibland och behöver ses över. Därför vill husägaren flytta den till nedre raden, så att den blir mer lättillgänglig. Byt plats på panel 2 och panel 8.
+### Task 1
+The solar panel with id "2" is troublesome and needs repairs. The house owner wants to move it to the bottom row so it's more accessible. Swap panel 2 and 8.
 
-## Uppgift 2
-Vår designer har bestämt att vi ska kunna erbjuda två olika takfärger, istället för dagens hårdkodade grå tak. De två takstilarna ska vara grå och terrakotta.
+### Task 2
+Our designer has decided we want to offer two different roof colours, instead of the currently hard-coded grey roof. The two available colours should be grey (current style) and terracotta (new style).
 
-## Uppgift 3
-Solpanelerna är hårdkodade till en kapacitet på 250W, men nu ska vi även stödja olika typer av paneler, så kapaciteten måste vara konfigurerbar. Det är tillräckligt bra om kapaciteten definieras i samband med att id och takposition sätts.
+### Task 3
+The solar panels are hard-coded to a capacity of 250W, but we want to support different types of panels so the capacity needs to be configurable. It's good enough if the capacity is defined when ID and roof position is set.
 
-## Uppgift 4
-Vi vill nu lägga till en knapp som stoppar/startar alla solpaneler. Det naturliga sättet att bygga den är som en ny react-komponent. Scaffolda med hjälp av yeoman. Knappen kan visuellt ligga var som helst på sidan.
+### Task 4
+We want to add a button that stops/starts all solar panels. It should be a new react component, please scaffold using Yeoman. The button can be placed anywhere on the house.
 
-## Uppgift 5
-Under senaste releasen så blev rubriken "My solar panels" vänsterställd. Den ska egentligen ligga centrerad över himlen. Detta måste rättas till. En ledtråd finns i git-historiken.
+### Task 5
+During the latest release, the title "My solar panels" got left-aligned by mistake. It should be centered across the sky. This needs correcting, there is a clue in the git history.
 
-## Uppgift 6
-Vår produktägare vill att texten som visar den uppmätta elproduktionen ska bli röd när den understiger 20% av maxkapaciteten.
+### Task 6
+Our product owner wants the measured electrical production for each panel to be rendered in red when it is below 20% of the panel's maximum capacity.
