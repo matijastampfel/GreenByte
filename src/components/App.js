@@ -19,19 +19,24 @@ class AppComponent extends React.Component {
 				{ panelId: 7, x: 3, y: 2 },
 				{ panelId: 8, x: 2, y: 1 }
 			],
-			value:"250"
+			value:"250",
+			rcolor:"roof"
 			
 		};
 
 	this.handleChange = this.handleChange.bind(this);
 	
-
+	this.handleChangeColor = this.handleChangeColor.bind(this);
 
 }
 
  handleChange(event){
     // debugger;   
 	this.setState({value:event.target.value});
+}
+
+handleChangeColor(event){
+	this.setState({rcolor:event.target.value})
 }
 
 
@@ -44,7 +49,7 @@ class AppComponent extends React.Component {
 		return (
 			<div className="index">
 				<h1>My solar panels</h1>
-				<div className="roof">
+				<div className={this.state.rcolor}>
 					{ solarPanels.map(p => <SolarPanel value={this.state.value} active={ state.panelsAreOn } key={ p.panelId } id={ p.panelId } x={ p.x } y={ p.y } />) }
 				</div>
 				<div>
@@ -59,8 +64,22 @@ class AppComponent extends React.Component {
 								<option value="350">350W</option>
 								<option value="550">550W</option>
 					          </select>
-					        </label>
-					  
+						</label>
+					</form>
+				</div>
+
+
+
+
+				<div>
+					<form onSubmit={this.handleChangeColor}>
+						<label>
+							Pick your roof color:
+							<select value={this.state.rcolor} onChange={this.handleChangeColor}>
+								<option value="roof">Green</option>
+								<option value="roof2">Terracotta</option>
+							</select>
+						</label>
 					</form>
 				</div>
 			</div>
