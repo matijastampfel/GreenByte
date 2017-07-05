@@ -3,7 +3,6 @@ import './app.css';
 import SolarPanel from './SolarPanel';
 import './roof.scss';
 import reduxStore from '../stores/index';
-import ChangeW from './ChangeW';
 
 class AppComponent extends React.Component {
 	constructor(props) {
