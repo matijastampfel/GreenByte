@@ -1,5 +1,8 @@
 import React from 'react';
 import './solarpanel.scss';
+import AppComponent from './App';
+
+
 
 class SolarPanel extends React.Component {
 	constructor(props) {
@@ -10,6 +13,8 @@ class SolarPanel extends React.Component {
 		}
 	}
 
+
+
 	simulatePowerOutput(capacity) {
 		return Math.floor(Math.random() * capacity);
 	}
@@ -17,8 +22,9 @@ class SolarPanel extends React.Component {
 	componentDidMount() {
 		if (this.props.active) {
 			setInterval(() => {
+				
 				this.setState({
-					powerOutput: this.simulatePowerOutput(250)
+					powerOutput: this.simulatePowerOutput(this.props.value)
 				})
 			}, 1000);
 		}
@@ -34,6 +40,7 @@ class SolarPanel extends React.Component {
 			<div className="solarpanel-component" style={ position }>
 				Power generated from panel {this.props.id}: <output>{ this.state.powerOutput }</output>
 	 		</div>
+			 
 		);
 	}
 }
