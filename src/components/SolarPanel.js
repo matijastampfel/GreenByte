@@ -9,7 +9,8 @@ class SolarPanel extends React.Component {
 		super(props)
 
 		this.state = {
-			powerOutput: null
+			powerOutput: null,
+			classNamePanel: null
 		}
 	}
 
@@ -26,6 +27,16 @@ class SolarPanel extends React.Component {
 				this.setState({
 					powerOutput: this.simulatePowerOutput(this.props.value)
 				})
+				
+				var panelLevel = null;
+				var isPanelLevelBellow = false;
+				if(this.state.powerOutput < this.props.value * 0.2){
+					isPanelLevelBellow =  true;
+				}
+				panelLevel = isPanelLevelBellow ? "solarpanel-component2" : "solarpanel-component";
+				this.setState({
+					classNamePanel : panelLevel
+				})
 			}, 1000);
 		}
 	}
@@ -37,7 +48,7 @@ class SolarPanel extends React.Component {
 		};
 
 		return (
-			<div className="solarpanel-component" style={ position }>
+			<div className={this.state.classNamePanel} style={ position }>
 				Power generated from panel {this.props.id}: <output>{ this.state.powerOutput }</output>
 	 		</div>
 			 
